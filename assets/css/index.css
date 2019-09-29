@@ -1,0 +1,100 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html, body {
+  font-size: 17px;
+  background-image: url(../../uuidfetcher/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar-header:hover{
+  background-color: none;
+}
+
+#navibereich li {
+  display: inline;
+  list-style-type: none;
+}
+
+#navibereich {
+  background-color: dimgray;
+  padding: 4px 0;
+  /*
+  border-top: 3px solid #668BCC;
+  border-bottom: 3px solid #668BCC;
+  */
+  margin: 0;
+}
+
+#navibereich a {
+  color: black;
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+#navibereich a:hover {
+  background-color: lightslategray;
+}
+
+#navibereich a:hover,
+#startseite #navi01 a,
+#kontaktseite #navi02 a {
+  background-color: lightslategray;
+  /*  background-image: url(farbverlauf.jpg); */
+  background-repeat: repeat-x;
+  background-position: top left;
+}
+
+.spotify {
+  text-align: center;
+}
+.navbar-brand {
+  text-decoration: none;
+  color: #039be5;
+  font-size: 30px;
+}
+
+.container-fluid .navbar {
+  text-decoration: none;
+  color: #039be5;
+}
+
+.dropdown .dropdown-menu button .de:active {
+  color: #007bff;
+}
+
+/* hr .vertical {
+  border-left: 1px solid black; !important
+  width: 0px;
+  height: 100%; /* or height in PX
+}
+
+v-r {
+  height: 100%;
+  width: 0px;
+  border-left: 1px solid gray;
+  /*display: inline-block;
+}
+
+v-r .block {
+  display: inline-block;
+} */
+
+center .channel-player {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 187px;
+  width: 925px;
+  z-index: 0;
+}
+
+center .shadow {
+  box-shadow: 0 0px 10px rgba(0,0,0,0.2);
+}
+
+center .channel-color-13 {
+  background-image: linear-gradient(to right, #039be5, #007bff);
+}
