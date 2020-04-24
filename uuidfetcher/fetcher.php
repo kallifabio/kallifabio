@@ -23,10 +23,10 @@
   </footer>
 </body>
 </html>
-<?php
-header('Location: http://127.0.0.1:61741/uuidfetcher/fetcher.php');
+<!-- <?php
+header('Location: fetcher.php');
 exit();
-?>
+?> -->
 <?php
 if (isset($_GET['username']) and $_GET['username'] != "username" and $_GET['username'] != "") {
   echo "<div id='container'>";

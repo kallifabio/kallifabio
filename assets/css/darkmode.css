@@ -1,36 +1,12 @@
-/* DARKMODE OVERRIDES */
-
-body {
-  background-color: #131317!important;
-  color: #727679!important;
-}
-
-#logo {
-  filter: brightness(100)!important;
-}
-
-.channel-headline {
-  color: #727679!important;
-}
-
-.footer {
-  opacity: .25!important;
-}
-
-#pagecontrol {
-  color: #fff!important;
-}
-
-.herzchen {
-  color: #727679!important;
-}
-
-#settings-page input, label, textarea {
-  color: #727679!important;
-  background-color: #131317!important;
-}
-
-#settings-page .btn-hover.color-1 {
-  background-image: linear-gradient(to right, #52525f, #c9dad2, #b5c8bf, #ffffff)!important;
-  box-shadow: 0 4px 15px 0 rgb(19, 19, 23)!important;
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #444;
+    color: #e4e4e4;
+  }
+  a {
+    color: #e39777;
+  }
+  img {
+    filter: grayscale(30%);
+  }
 }
