@@ -1,5 +1,15 @@
 <?php
   require "config/config.php";
+
+  /* Require API
+  ---------------------------*/
+  /*require 'mojang-api.class.php';*/
+
+  /* Mojang Status
+  ---------------------------*/
+  /*$status = MojangAPI::getStatus();
+  echo 'Minecraft.net: ' . $status['minecraft.net']; // Minecraft.net: green
+  */
  ?>
 
 <!DOCTYPE html>
@@ -24,14 +34,14 @@
     <link href="icon" rel="stylesheet">
     <!-- JavaScripts-->
     <link rel="stylesheet" crossorigin="anonymous" href="assets/css/main.css">
-    <script type="text/javascript" async="" src="assets/js/mixpanel-2-latest.min.js.Download"></script>
-    <script type="text/javascript" async="" src="assets/js/analytics.js.Download"></script>
-    <script type="text/javascript" async="" src="assets/js/55363db9-2877-45ff-9ad5-4118a8d080cb.js.Download"></script>
-    <script type="text/javascript" async="" src="assets/js/gtm.js.Download"></script>
-    <script type="text/javascript" async="" src="assets/js/analytics.min.js.Download"></script>
-    <script src="assets/js/app.js.Download"></script>
-    <script src="assets/js/materialize.min.js.Download"></script>
-    <script src="assets/js/smoothscroll.min.js.Download"></script>
+    <script type="text/javascript" async="" src="assets/js/mixpanel-2-latest.min.js"></script>
+    <script type="text/javascript" async="" src="assets/js/analytics.js"></script>
+    <script type="text/javascript" async="" src="assets/js/55363db9-2877-45ff-9ad5-4118a8d080cb.js"></script>
+    <script type="text/javascript" async="" src="assets/js/gtm.js"></script>
+    <script type="text/javascript" async="" src="assets/js/analytics.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/smoothscroll.min.js"></script>
     <script>
         ! function() {
             var analytics = window.analytics = window.analytics || [];
@@ -84,10 +94,10 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="assets/js/2407530281.js.Download"></script>
-    <script async="" src="assets/js/hotjar-67832.js.Download"></script>
+    <script src="assets/js/2407530281.js"></script>
+    <script async="" src="assets/js/hotjar-67832.js"></script>
     <style type="text/css"></style>
-    <script async="" src="assets/js/modules.edc291623c5e6ec9ef2e.js.Download" charset="utf-8"></script>
+    <script async="" src="assets/js/modules.edc291623c5e6ec9ef2e.js" charset="utf-8"></script>
     <style type="text/css">
         iframe#_hjRemoteVarsFrame {
             display: none !important;--
@@ -115,6 +125,7 @@
                 <li><a class="waves-effect" href="#">Team</a></li>
                 <li><a class="waves-effect" href="dashboard/dashboard.html">Dashboard</a></li>
                 <li><a class="waves-effect" href="discord.html">Discord</a></li>
+                <li><a class="waves-effect" href="youtuber.html">Discord</a></li>
             </ul>
         </div>
     </nav>
@@ -129,8 +140,12 @@
         </div>
         <div style="text-align: center; background-image: url(assets/img/counterbackground.png); background-size: cover; background-position: center; background-repeat: no-repeat;">
           <h1 style="font-size: 3.5em;">Willkommen auf kallifabio.net</h1>
-          <p class="info" style="font-size: 1.3em;">Es befinden sich <span class="sip" data-ip="45.82.120.191" data-port="25565" style="color: #4286f4;">
-      			0</span> Spieler auf <span class="ip" style="cursor: pointer; color: #4286f4;">kallifabio.net</span></p>
+          <p class="info" style="font-size: 1.3em;">Es befinden sich <span style="color: #4286f4;">0</span> Spieler auf <span class="ip" style="cursor: pointer; color: #4286f4;">kallifabio.net</span></p>
+          <?php/*
+            $query = MojangAPI::query('de.kallifabio.net', 25565);
+            if ($query) echo 'There is ' . $query['players'] . ' players online out of ' . $query['maxplayers'] . '<br>';
+            else echo 'Server is offline.<br>';
+          */?>
         </div>
     </div>
     <div id="features" class="features">
@@ -250,7 +265,7 @@
         })(window, document, 'http://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
     <div class="hiddendiv common"></div>
-    <script type="text/javascript" id="" src="assets/js/adsbygoogle.js.Download"></script>
+    <script type="text/javascript" id="" src="assets/js/adsbygoogle.js"></script>
     <script type="text/javascript" id="">
         (adsbygoogle = window.adsbygoogle || []).push({
             google_ad_client: "ca-pub-4745843440367393",

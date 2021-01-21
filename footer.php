@@ -1,17 +1,17 @@
 <?php
 
-echo "<footer class="page-footer green">";
-    echo "<div class="container-wide">";
+echo "<footer class="page-footer green">"
+    echo "<div class="container-wide">"
         echo "<div class="row">";
-            echo "<div class="col m6 l6 s12">";
-                echo "<div class="row">";
-                    echo "<div class="col m4 s6">";
-                        echo "<h2 class="white-text">Wichtige Informationen</h2>";
+            echo "<div class="col m6 l6 s12">"
+                echo "<div class="row">"
+                    echo "<div class="col m4 s6">"
+                        echo "<h2 class="white-text">Wichtige Informationen</h2>"
                         echo "<p class="grey-text text-lighten-4">Wir sind ein Team von paar Leuten, die an diesem Projekt arbeiten, als wäre es unser Vollzeitjob. Jeder Betrag würde zur Unterstützung und Weiterentwicklung dieses Projekts beitragen und wird sehr geschätzt.
-                            <br />Schreibt uns gerne an <a class="grey-text text-lighten-1" href="mailto:support@kallifabio.net">support@kallifabio.net</a> wenn du zu irgendwas Fragen hast.</p>";
-                    echo "</div>";
-                echo "</div>";
-            echo "</div>";
+                            <br />Schreibt uns gerne an <a class="grey-text text-lighten-1" href="mailto:support@kallifabio.net">support@kallifabio.net</a> wenn du zu irgendwas Fragen hast.</p>"
+                    echo "</div>"
+                echo "</div>"
+            echo "</div>"
             <div class="col m6 l6 s12">
                 <div class="row">
                     <div class="col m4 s6">
